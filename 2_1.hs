@@ -11,7 +11,7 @@
   listFromTree (emptyTree `insert` 1 `insert` 2 `insert` 3) === [1,2,3]
 -}
 
-ata BinaryTree = EmptyTree
+data BinaryTree = EmptyTree
                 | Leaf Integer
                 | Node Integer BinaryTree BinaryTree deriving Show
 
